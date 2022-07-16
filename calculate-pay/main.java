@@ -13,6 +13,7 @@ class calculatePay
 		int overtimeHours;
 
 		System.out.println("Enter hours worked: ");
+
 		weeklyHours = scnr.nextInt();
 
 		if( weeklyHours <= WEEKLY_LIMIT )
@@ -26,5 +27,7 @@ class calculatePay
 		}
 
 		System.out.println("Weekly salary is: " + weeklySalary);
+
+		scnr.close();
 	}
 }
