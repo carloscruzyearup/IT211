@@ -7,11 +7,13 @@ class eligible
 		Scanner scnr = new Scanner(System.in);
 
 		System.out.print("Please enter your age: ");
-		int age =  Integer.parseInt(scnr.nextLine());
+		int age =  scnr.nextInt();
 
 		if( age >= 18 && age <= 25 )
 			System.out.println("Eligible");
 		else
 			System.out.println("Ineligible");
+
+		scnr.close();
 	}
 }

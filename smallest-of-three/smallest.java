@@ -34,5 +34,7 @@ class smallest
 		}
 
 		System.out.println("The smallest number is " + min);
+
+		scnr.close();
 	}
 }
